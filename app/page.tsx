@@ -13,7 +13,7 @@ export default function Page() {
           className="rounded-full border-[2px] border-yellow-500 -ml-2 hover:grayscale transition-all duration-300"
         />
         <div>
-          <p className="text-xl font-semibold">John Doe</p>
+          <p className="text-xl font-semibold">John Dos</p>
           <p className="text-lg text-gray-400">Student at SLIIT</p>
         </div>
       </div>
