@@ -1,6 +1,6 @@
 # 🎉 Next.js Portfolio Template 🎉
 
-Welcome to your new favorite project! This repository has everything you need to kickstart your very own Next.js portfolio website. It’s a fun, easy way to showcase your skills, projects, and all the awesome stuff you’ve been working on!
+Awesome. Now that you're here, in a little while you'll have a nice and sleek portfolio with a blog!
 
 ## 🚀 Features
 
@@ -66,4 +66,4 @@ Feel free to sprinkle your own flair on this template! Change styles, add cool c
 
 ## 🙌 Let’s Do This!
 
-Thanks for choosing this template to showcase your work! Can’t wait to see what you create. Happy coding! 🎉
+Happy coding! 🎉
