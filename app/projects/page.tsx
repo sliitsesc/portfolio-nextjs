@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { FaExternalLinkAlt } from "react-icons/fa"; // Import the icon for the external link
 
 const projects = [
   {
@@ -65,11 +65,11 @@ export default function Projects() {
             {project.link && (
               <a
                 href={project.link}
-                className="text-blue-500 hover:underline"
+                className="text-blue-500 hover:underline flex items-center"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                View Project
+                <FaExternalLinkAlt className="mr-2" /> View Project
               </a>
             )}
           </div>

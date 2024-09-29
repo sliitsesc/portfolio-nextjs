@@ -1,4 +1,23 @@
-import Image from "next/image";
+import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNodeJs, FaPython, FaPhp, FaJava } from "react-icons/fa";
+import { SiMongodb, SiMysql, SiArduino, SiLaravel } from "react-icons/si"; // Additional tech stack icons
+
+const skills = {
+  frontend: ["React.js", "HTML", "CSS", "JavaScript", "Bootstrap"],
+  backend: ["Node.js", "Express.js", "PHP", "Laravel"],
+  databases: ["MongoDB", "MySQL"],
+  iot: ["Arduino"],
+};
+
+const programmingLanguages = [
+  { name: "HTML", icon: <FaHtml5 /> },
+  { name: "CSS", icon: <FaCss3Alt /> },
+  { name: "JavaScript", icon: <FaJsSquare /> },
+  { name: "React", icon: <FaReact /> },
+  { name: "Node.js", icon: <FaNodeJs /> },
+  { name: "Python", icon: <FaPython /> },
+  { name: "PHP", icon: <FaPhp /> },
+  { name: "Java", icon: <FaJava /> },
+];
 
 const achievements = [
   "Gold Medal at Kaohsiung International Invention & Design Expo (Taiwan, 2019)",
@@ -41,31 +60,38 @@ const education = [
   },
 ];
 
-const languages = [
-  "English (Fluent)",
-  "Tamil (Fluent)",
-  "Sinhalese (Intermediate)",
-];
-
 export default function About() {
   return (
     <section>
-      
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter">About Me</h1>
       <p className="mb-4">
-        I am Ayyash Zamny, a Software Engineering student at Sri Lanka Institute
-        of Information Technology. With a passion for developing innovative
-        solutions, I have worked on a variety of projects ranging from web
-        development to IoT systems.
+        I am Ayyash Zamny, a Software Engineering student at Sri Lanka Institute of Information Technology. With a passion for developing innovative solutions, I have worked on a variety of projects ranging from web development to IoT systems.
       </p>
 
-      <h2 className="text-xl font-semibold mt-10 mb-4">Achievements</h2>
-      <ul className="list-disc pl-5 space-y-2">
-        {achievements.map((achievement, index) => (
-          <li key={index}>{achievement}</li>
-        ))}
-      </ul>
+      {/* Skills Section */}
+      <h2 className="text-xl font-semibold mt-10 mb-4">Skills</h2>
+      <div className="space-y-4">
+        <div>
+          <h3 className="font-semibold">Frontend</h3>
+          <p>{skills.frontend.join(", ")}</p>
+        </div>
+        <div>
+          <h3 className="font-semibold">Backend</h3>
+          <p>{skills.backend.join(", ")}</p>
+        </div>
+        <div>
+          <h3 className="font-semibold">Databases</h3>
+          <p>{skills.databases.join(", ")}</p>
+        </div>
+        <div>
+          <h3 className="font-semibold">IoT</h3>
+          <p>{skills.iot.join(", ")}</p>
+        </div>
+      </div>
 
+      
+
+      {/* Work Experience Section */}
       <h2 className="text-xl font-semibold mt-10 mb-4">Work Experience</h2>
       {experience.map((job, index) => (
         <div key={index} className="mb-6">
@@ -75,6 +101,7 @@ export default function About() {
         </div>
       ))}
 
+      {/* Education Section */}
       <h2 className="text-xl font-semibold mt-10 mb-4">Education</h2>
       {education.map((edu, index) => (
         <div key={index} className="mb-6">
@@ -85,10 +112,22 @@ export default function About() {
         </div>
       ))}
 
-      <h2 className="text-xl font-semibold mt-10 mb-4">Languages</h2>
+      {/* Programming Languages Section */}
+      <h2 className="text-xl font-semibold mt-10 mb-4">Programming Languages</h2>
+      <ul className="flex flex-wrap gap-6">
+        {programmingLanguages.map(({ name, icon }, index) => (
+          <li key={index} className="flex items-center space-x-2">
+            <span className="text-3xl">{icon}</span>
+            <span>{name}</span>
+          </li>
+        ))}
+      </ul>
+
+      {/* Achievements Section */}
+      <h2 className="text-xl font-semibold mt-10 mb-4">Achievements</h2>
       <ul className="list-disc pl-5 space-y-2">
-        {languages.map((language, index) => (
-          <li key={index}>{language}</li>
+        {achievements.map((achievement, index) => (
+          <li key={index}>{achievement}</li>
         ))}
       </ul>
     </section>
