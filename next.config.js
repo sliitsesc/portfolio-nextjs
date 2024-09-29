@@ -1,3 +1,3 @@
-// module.exports = {
-//   basePath: "/portfolio-nextjs",
-// };
+module.exports = {
+  basePath: "/portfolio-nextjs",
+};
