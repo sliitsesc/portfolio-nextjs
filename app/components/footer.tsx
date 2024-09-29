@@ -9,14 +9,14 @@ export default function Footer() {
             className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
             rel="noopener noreferrer"
             target="_blank"
-            href="https://github.com/sliitsesc">
+            href="https://github.com/ayyashzamny">
             <ArrowUpRight size={24} />
             <p className="ml-2 h-7">Github</p>
           </a>
         </li>
       </ul>
       <p className="mt-8 text-neutral-600 dark:text-neutral-300">
-        © {new Date().getFullYear()} SESC SLIIT
+        © {new Date().getFullYear()} AyyTec
       </p>
     </footer>
   );
