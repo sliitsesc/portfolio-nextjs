@@ -1,5 +1,5 @@
 import { BlogPosts } from "app/components/posts";
-import Image from "next/image";
+import profilePic from "../public/AYS_5568.jpg"; // Import profile picture
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa"; // Import social media icons
 
 export default function Page() {
@@ -7,7 +7,7 @@ export default function Page() {
     <section>
       <div className="flex gap-x-4 items-center flex-row mb-10">
         <Image
-          src={"/AYS_5568.jpg"}
+          src={profilePic}
           alt="profile pic"
           width={100}
           height={100}
