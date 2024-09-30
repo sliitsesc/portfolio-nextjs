@@ -1,12 +1,12 @@
 import { BlogPosts } from "app/components/posts";
-import Image from "next/image";
+import profilePic from "../public/AYS_5568.jpg"; // Import profile picture
 
 export default function Page() {
   return (
     <section>
       <div className="flex gap-x-4 items-center flex-row mb-10">
         <Image
-          src={"/image.jpg"}
+          src={profilePic}
           alt="profile pic"
           width={100}
           height={100}
