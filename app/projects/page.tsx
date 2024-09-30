@@ -1,5 +1,5 @@
-import { FaExternalLinkAlt, FaHtml5, FaCss3Alt, FaJs, FaPhp, FaJava, FaReact, FaNodeJs } from "react-icons/fa";
-import { SiMongodb, SiExpress, SiMysql } from "react-icons/si";
+import { FaExternalLinkAlt, FaHtml5, FaCss3Alt, FaJs, FaPhp, FaJava, FaReact, FaNodeJs ,FaLaravel} from "react-icons/fa";
+import { SiMongodb, SiExpress, SiMysql ,SiArduino} from "react-icons/si";
 
 const projects = [
   {
@@ -35,7 +35,7 @@ const projects = [
   {
     title: "Employee Leave Management System",
     description: "A system where employees can apply for leave, and admins can approve or reject requests.",
-    stack: ["laravel"],
+    stack: ["html", "css", "javascript","laravel"],
     link: "https://github.com/ayyashzamny/Employee-Leave-System-Laravel.git",
   },
   {
@@ -58,8 +58,8 @@ const techIcons = {
   express: <SiExpress />,
   mysql: <SiMysql />,
   // Text for technologies without icons:
-  arduino: "Arduino",
-  laravel: "Laravel",
+  arduino: <SiArduino />,
+  laravel: <FaLaravel />,
 };
 
 export default function Projects() {
