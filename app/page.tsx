@@ -1,4 +1,5 @@
 import { BlogPosts } from "app/components/posts";
+import Image from "next/image"; // Use next/image for image optimization
 import profilePic from "../public/AYS_5568.jpg"; // Import profile picture
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa"; // Import social media icons
 
