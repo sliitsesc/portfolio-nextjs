@@ -20,7 +20,7 @@ const navItems = {
   "/resume": {
     name: "resume",
     icon: <FaDownload />, // Icon for download
-    link: "/path/to/your/resume.pdf", // Path to your resume file
+    link: "/Ayyash_Zamny_CV.pdf", // Path to your resume file
   },
 };
 
