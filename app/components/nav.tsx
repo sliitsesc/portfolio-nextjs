@@ -17,10 +17,10 @@ const navItems = {
     icon: <FaProjectDiagram />, // Icon for projects
     link: "", // Link to the
   },
-  "/resume": {
+  "/resume": { 
     name: "resume",
     icon: <FaDownload />, // Icon for download
-    link: "/path/to/your/resume.pdf", // Path to your resume file
+    link: "/portfolio-nextjs/Ayyash_Zamny_CV.pdf", // Path to your resume file
   },
 };
 
