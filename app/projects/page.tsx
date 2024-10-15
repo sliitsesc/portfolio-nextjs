@@ -3,23 +3,13 @@ import { SiMongodb, SiExpress, SiMysql ,SiArduino} from "react-icons/si";
 
 const projects = [
   {
-    title: "Medical Laboratory Information Management System",
-    description: "A system for managing laboratory tests, where users can create accounts, book appointments, and download test reports.",
-    stack: ["html", "css", "javascript", "php"],
-    link: "https://github.com/ayyashzamny/ARM_MediLab.git",
+    title: " MediX- Healthcare Management System",
+    description: "Manage roles for admin, employee, and doctor accounts. Track and approve leave requests and manage employee schedules. Patients can book appointments, and admins manage doctor availability and schedules.",
+    stack: ["react", "express", "node", "mysql"],
+    link: "https://github.com/ayyashzamny/medi-x-csse.git",
   },
-  {
-    title: "Vehicle Rental System",
-    description: "A platform where vehicle owners can list their vehicles, and users can rent the cars available on the page.",
-    stack: ["html", "css", "javascript", "java"],
-    link: "https://github.com/ayyashzamny/Vehicle-Rental-System.git",
-  },
-  {
-    title: "Certificate Verification System",
-    description: "A system that allows users to verify certificates by entering the certificate ID to check for validity.",
-    stack: ["html", "css", "javascript", "php"],
-    link: "http://test-web-institute.free.nf/?i=1",
-  },
+  
+  
   {
     title: "Tailor Management System",
     description: "An online order management system for tailor shops, where users can place orders and shop owners can manage them.",
@@ -39,10 +29,10 @@ const projects = [
     link: "https://github.com/ayyashzamny/Employee-Leave-System-Laravel.git",
   },
   {
-    title: "IS Interiors Website Development",
-    description: "A website for an interior design shop to showcase their products and services.",
-    stack: ["html", "css", "javascript", "php"],
-    link: "",
+    title: "Vehicle Rental System",
+    description: "A platform where vehicle owners can list their vehicles, and users can rent the cars available on the page.",
+    stack: ["html", "css", "javascript", "java"],
+    link: "https://github.com/ayyashzamny/Vehicle-Rental-System.git",
   },
 ];
 

@@ -34,11 +34,11 @@ export default function Page() {
       </div>
 
       <p className="mb-4">
-        I'm Ayyash Zamny, a Software Engineering student at the Sri Lanka Institute of Information Technology. With a CGPA of 3.30, I have gained hands-on experience in developing innovative solutions across various projects, including the Medical Laboratory Information Management System, Vehicle Rental System, and IoT-based agricultural monitoring systems.
+        I'm Ayyash Zamny, a Software Engineering student at the Sri Lanka Institute of Information Technology. I have gained hands-on experience in developing innovative solutions across various projects, including the MediX- Healthcare Management System, Vehicle Rental System, and IoT-based agricultural monitoring systems.
       </p>
 
       <p className="mb-4">
-        Over the course of my academic journey, I have honed my skills in several programming languages like Java, PHP, Python, JavaScript, and have developed proficiency in both front-end and back-end technologies. I have worked on projects ranging from certificate verification systems to employee leave management solutions, using stacks like React.js, Node.js, Laravel, and MongoDB.
+        Over the course of my academic journey, I have honed my skills in several programming languages like Java, PHP, Python, JavaScript, and have developed proficiency in both front-end and back-end technologies. I have worked on projects ranging from Tailor Management System to employee leave management solutions, using stacks like MERN, Laravel.
       </p>
 
       <p className="mb-4">
