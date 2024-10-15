@@ -1,26 +1,26 @@
-import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNodeJs, FaPhp, FaLaravel, FaBootstrap } from "react-icons/fa";
-import { SiMongodb, SiMysql, SiExpress, SiArduino } from "react-icons/si"; // Additional tech stack icons
+import { FaReact, FaHtml5, FaCss3Alt, FaJsSquare, FaBootstrap, FaPhp, FaLaravel } from "react-icons/fa";
+import { SiMongodb, SiMysql, SiExpress, SiPostgresql, SiDjango } from "react-icons/si";
+import { FaNodeJs } from "react-icons/fa";
 
 const skills = {
-  frontend: [
-    { name: "React.js", icon: <FaReact /> },
-    { name: "HTML", icon: <FaHtml5 /> },
-    { name: "CSS", icon: <FaCss3Alt /> },
-    { name: "JavaScript", icon: <FaJsSquare /> },
-    { name: "Bootstrap", icon: <FaBootstrap /> },
-  ],
-  backend: [
+  webDevelopment: [
     { name: "Node.js", icon: <FaNodeJs /> },
     { name: "Express.js", icon: <SiExpress /> },
+    { name: "React.js", icon: <FaReact /> },
     { name: "PHP", icon: <FaPhp /> },
+    { name: "JavaScript", icon: <FaJsSquare /> },
+    { name: "HTML", icon: <FaHtml5 /> },
+    { name: "CSS", icon: <FaCss3Alt /> },
+  ],
+  frameworks: [
+    { name: "Bootstrap", icon: <FaBootstrap /> },
+    { name: "Django", icon: <SiDjango /> },
     { name: "Laravel", icon: <FaLaravel /> },
   ],
   databases: [
     { name: "MongoDB", icon: <SiMongodb /> },
     { name: "MySQL", icon: <SiMysql /> },
-  ],
-  iot: [
-    { name: "Arduino", icon: <SiArduino /> },
+    { name: "PostgreSQL", icon: <SiPostgresql /> },
   ],
 };
 
@@ -48,7 +48,7 @@ const education = [
     degree: "BSc (Hons) in IT Specialization in Software Engineering",
     institution: "Sri Lanka Institute of Information Technology",
     duration: "2022 - Present",
-    gpa: "CGPA: 3.30 / 4.0",
+    notes: "MMA, SciFest'24 - 1st Runner Up",
   },
   {
     degree: "G.C.E A/L in Physical Science",
@@ -68,57 +68,43 @@ export default function About() {
 
       {/* Skills Section */}
       <h2 className="text-xl font-semibold mt-10 mb-4">Skills</h2>
-      <div className="space-y-4">
-        {/* Frontend Skills */}
-        <div>
-          <h3 className="font-semibold">Frontend</h3>
-          <div className="flex space-x-4 mt-2">
-            {skills.frontend.map((skill, index) => (
-              <div key={index} className="flex items-center space-x-2">
-                <span className="text-2xl">{skill.icon}</span>
-                <span>{skill.name}</span>
-              </div>
-            ))}
-          </div>
-        </div>
 
-        {/* Backend Skills */}
-        <div>
-          <h3 className="font-semibold">Backend</h3>
-          <div className="flex space-x-4 mt-2">
-            {skills.backend.map((skill, index) => (
-              <div key={index} className="flex items-center space-x-2">
-                <span className="text-2xl">{skill.icon}</span>
-                <span>{skill.name}</span>
-              </div>
-            ))}
-          </div>
+      {/* Web Development Section */}
+      <div>
+        <h3 className="font-semibold">Web Development</h3>
+        <div className="flex space-x-4 mt-2">
+          {skills.webDevelopment.map((skill, index) => (
+            <div key={index} className="flex items-center space-x-2">
+              <span className="text-2xl">{skill.icon}</span>
+              <span>{skill.name}</span>
+            </div>
+          ))}
         </div>
+      </div>
 
-        {/* Databases */}
-        <div>
-          <h3 className="font-semibold">Databases</h3>
-          <div className="flex space-x-4 mt-2">
-            {skills.databases.map((skill, index) => (
-              <div key={index} className="flex items-center space-x-2">
-                <span className="text-2xl">{skill.icon}</span>
-                <span>{skill.name}</span>
-              </div>
-            ))}
-          </div>
+      {/* Frameworks Section */}
+      <div className="mt-6">
+        <h3 className="font-semibold">Frameworks</h3>
+        <div className="flex space-x-4 mt-2">
+          {skills.frameworks.map((skill, index) => (
+            <div key={index} className="flex items-center space-x-2">
+              <span className="text-2xl">{skill.icon}</span>
+              <span>{skill.name}</span>
+            </div>
+          ))}
         </div>
+      </div>
 
-        {/* IoT */}
-        <div>
-          <h3 className="font-semibold">IoT</h3>
-          <div className="flex space-x-4 mt-2">
-            {skills.iot.map((skill, index) => (
-              <div key={index} className="flex items-center space-x-2">
-                <span className="text-2xl">{skill.icon}</span>
-                <span>{skill.name}</span>
-              </div>
-            ))}
-          </div>
+      {/* Databases Section */}
+      <div className="mt-6">
+        <h3 className="font-semibold">Databases</h3>
+        <div className="flex space-x-4 mt-2">
+          {skills.databases.map((skill, index) => (
+            <div key={index} className="flex items-center space-x-2">
+              <span className="text-2xl">{skill.icon}</span>
+              <span>{skill.name}</span>
+            </div>
+          ))}
         </div>
       </div>
 
@@ -138,8 +124,8 @@ export default function About() {
         <div key={index} className="mb-6">
           <h3 className="text-lg font-semibold">{edu.degree}</h3>
           <p className="text-gray-500">{edu.institution} - {edu.duration}</p>
-          {edu.gpa && <p className="text-gray-700">{edu.gpa}</p>}
           {edu.notes && <p className="text-gray-700">{edu.notes}</p>}
+          
         </div>
       ))}
 
