@@ -9,8 +9,7 @@ const skills = {
     { name: "React.js", icon: <FaReact /> },
     { name: "PHP", icon: <FaPhp /> },
     { name: "JavaScript", icon: <FaJsSquare /> },
-    { name: "HTML", icon: <FaHtml5 /> },
-    { name: "CSS", icon: <FaCss3Alt /> },
+    
   ],
   frameworks: [
     { name: "Bootstrap", icon: <FaBootstrap /> },
@@ -25,6 +24,10 @@ const skills = {
 };
 
 const achievements = [
+  "2nd Place at SciFest (SLIIT) under the University Category (2024)",
+  "4th Place at SLIIT Xtreme Coding Hackathon (2024)",
+  "3rd Place at INTELLECT 1.0 (2024)",
+  "9th Place at AlgoXplore CTF & Coding Hackathon (2024)",
   "Gold Medal at Kaohsiung International Invention & Design Expo (Taiwan, 2019)",
   "Finalist at Intel International Science and Engineering Fair (USA, 2019)",
   "Gold Medal at International Young Inventors Award (Indonesia, 2017)",
@@ -35,12 +38,19 @@ const achievements = [
 
 const experience = [
   {
+    title: "Junior Software Engineer (Intern)",
+    company: "American Premium Water",
+    duration: "Dec 2024 - Present",
+    description: ""
+  },
+  {
     title: "Software Engineer Intern",
     company: "Asipiya Soft Solutions",
     duration: "June 2024 - Sep 2024",
     description:
       "Developed and maintained backend & frontend for Micro Finance application using Laravel. Created Jira-like interface for the Invoice application using React.js. Built complex interfaces for a Finance application using Laravel.",
   },
+  
 ];
 
 const education = [
